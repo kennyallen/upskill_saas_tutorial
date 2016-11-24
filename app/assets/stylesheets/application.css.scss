@@ -16,7 +16,8 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
-
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 // Typography Styles
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
@@ -34,11 +35,10 @@ background: linear-gradient(to left, #fc00ff , #00dbde); /* W3C, IE 10+/ Edge, F
 .navbar{
     border: none;
 }
-
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
     color: white;
-    & :hover {
+    &:hover {
         color: white;
         opacity: 0.75;
     }
