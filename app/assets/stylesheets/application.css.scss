@@ -48,6 +48,16 @@ background: linear-gradient(to left, #fc00ff , #00dbde); /* W3C, IE 10+/ Edge, F
     }
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.navbar-default .navbar-toggle {
+    border: 2px solid white;
+    &:hover, &:focus {
+        background-color: #fc00dd;
+    }
+}
+
 // Home Page Styles
 .home-callout {
     color: white;
