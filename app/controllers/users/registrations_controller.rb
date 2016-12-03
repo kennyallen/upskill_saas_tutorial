@@ -3,6 +3,8 @@
 # Otherwise Devise signs up user as usual.
 
 class Users::RegistrationsController < Devise::RegistrationsController
+  before_action :select_plan, only: :new
+  
   def create
     super do |resource|
       if params[:plan]
